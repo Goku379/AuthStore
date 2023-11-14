@@ -61,11 +61,14 @@ public class MainNhanVien extends javax.swing.JFrame {
                 }
             }
         });
-        menu.addMenu(new ModelMenu("Nhân viên", new ImageIcon(getClass().getResource("/com/raven/icon/user.png"))));
-        menu.addMenu(new ModelMenu("Chức năng 1", new ImageIcon(getClass().getResource("/com/raven/icon/message.png"))));
-        menu.addMenu(new ModelMenu("Chức năng 2", new ImageIcon(getClass().getResource("/com/raven/icon/report.png"))));
-        menu.addMenu(new ModelMenu("Chức năng 3", new ImageIcon(getClass().getResource("/com/raven/icon/setting.png"))));
-        menu.addMenu(new ModelMenu("Chức năng 4", new ImageIcon(getClass().getResource("/com/raven/icon/key.png"))));
+        menu.addMenu(new ModelMenu("Tài khoản", new ImageIcon(getClass().getResource("/com/raven/icon/circle-user.png"))));
+        menu.addMenu(new ModelMenu("Nhân viên", new ImageIcon(getClass().getResource("/com/raven/icon/user-headset.png"))));
+        menu.addMenu(new ModelMenu("Khách hàng", new ImageIcon(getClass().getResource("/com/raven/icon/woman-head.png"))));
+        menu.addMenu(new ModelMenu("Đơn hàng", new ImageIcon(getClass().getResource("/com/raven/icon/box-open.png"))));
+        menu.addMenu(new ModelMenu("Thống kê", new ImageIcon(getClass().getResource("/com/raven/icon/chart-histogram.png"))));
+        menu.addMenu(new ModelMenu("Sản phẩm", new ImageIcon(getClass().getResource("/com/raven/icon/shoe-prints.png"))));
+        menu.addMenu(new ModelMenu("Bán hàng", new ImageIcon(getClass().getResource("/com/raven/icon/shopping-cart.png"))));
+        menu.addMenu(new ModelMenu("Mã giảm giá", new ImageIcon(getClass().getResource("/com/raven/icon/ticket.png"))));
         body.add(menu, "w 50!");
         body.add(main, "w 100%");
         TimingTarget target = new TimingTargetAdapter() {
